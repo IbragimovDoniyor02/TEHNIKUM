@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Поиск фильма</title>
+    <style>
+        #movie-info {
+          display: none;
+        }
+      </style>
+</head>
+<body>
+    <h1>Поиск фильма</h1>
+  <form id="search-form">
+    <label for="movie-title">Введите название фильма:</label>
+    <label for="favorites">Добавить в избранное</label>
+    <input type="text" id="movie-title" required>
+    <button type="submit">Поиск</button>
+    <button onclick="addMovieToFavorites()">Добавить в избранное</button>
+  
+  <ul id="favoritesList"></ul>
+  </form>
+  <div id="movie-info"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
