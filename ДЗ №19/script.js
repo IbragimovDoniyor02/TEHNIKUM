@@ -71,5 +71,3 @@ document.getElementById('search-form').addEventListener('submit', function(e) {
 
 movieInfoContainer.style.display = 'block';
 }
-
-
